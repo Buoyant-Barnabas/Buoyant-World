@@ -186,7 +186,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
 document.getElementById("view").addEventListener("click",()=>document.getElementById("sidebar").classList.remove("open"));
 
 /* ===== CLOUD SYNC (Supabase). Paste your two values below. ===== */
-const SB_URL="PASTE_PROJECT_URL_HERE",SB_KEY="PASTE_PUBLISHABLE_KEY_HERE";
+const SB_URL="https://qqbsowrqcwksylrdgile.supabase.co",SB_KEY="sb_publishable_Epq4Kr1J3pXd7PpYTWL3GQ_W8xA5j6g";
 let sb=null,sbUser=null,sbCh=null,pushTimer=null,sbBusy=false;
 const cloudOn=()=>SB_URL.startsWith("https://")&&SB_KEY.length>20&&!!window.supabase;
 function cloudLabel(){let e=document.getElementById("cloud");if(e)e.textContent=!cloudOn()?"☁ Not set up":sbUser?"☁ Synced":"☁ Sign in"}
